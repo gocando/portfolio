@@ -342,7 +342,7 @@ export default function Portfolio() {
           reverse
           title="littleC"
           subtitle="C++"
-          image="/littlec.png"
+          image="/littleC.png"
           bullets={[
             "C-style interpreter to evaluate tree-based memory models.",
             "Custom lexer + recursive descent parser for tokenization, validation, and execution.",
