@@ -326,7 +326,7 @@ export default function Portfolio() {
         <ProjectResumeRow
           title="The Gamer Journal"
           subtitle="MEAN Stack"
-          image="/public/GamerTracker.jpg"
+          image="/GamerTracker.jpg"
           bullets={[
             "Full-stack journaling platform to reflect on gameplay & support mental well-being.",
             "Express.js + MongoDB backend with sentiment analysis & routed API calls.",
@@ -342,7 +342,7 @@ export default function Portfolio() {
           reverse
           title="littleC"
           subtitle="C++"
-          image="/public/littlec.png"
+          image="/littlec.png"
           bullets={[
             "C-style interpreter to evaluate tree-based memory models.",
             "Custom lexer + recursive descent parser for tokenization, validation, and execution.",
@@ -358,7 +358,7 @@ export default function Portfolio() {
         <ProjectResumeRow
           title="Minesweeper Game"
           subtitle="C++"
-          image="/public/Minesweeper.png"
+          image="/Minesweeper.png"
           bullets={[
             "Algorithms to dynamically generate randomized grids & guarantee solvable states.",
             "UI enabling players to flag, uncover tiles, and determine win/loss states based on logic."
@@ -401,7 +401,7 @@ export default function Portfolio() {
               </a>
               <a
                 className="rounded-xl border border-white/15 bg-white/5 px-5 py-3 hover:bg-white/10 transition"
-                href="www.linkedin.com/in/grecia-ocando-80493b362"
+                href="https://www.linkedin.com/in/grecia-ocando-80493b362"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -409,7 +409,7 @@ export default function Portfolio() {
               </a>
               <a
                 className="rounded-xl border border-sky-400/40 bg-sky-600/25 px-5 py-3 hover:bg-sky-600/35 transition"
-                href="/public/GreciaResume.pdf"
+                href="/GreciaResume.pdf"
                 target="_blank"
                 rel="noreferrer"
               >
