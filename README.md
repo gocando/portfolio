@@ -1,69 +1,89 @@
-# React + TypeScript + Vite
+# Grecia Ocando — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast, responsive developer portfolio built with **React + TypeScript + Vite + Tailwind CSS** and a lightweight starfield background. Sections include **About**, **Skills**, **Projects** (with live demo/media), and **Contact**.
 
-Currently, two official plugins are available:
+**Live site:** https://greciaocando.com
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Smooth scrolling, sticky top nav, and progress indicator  
+- Parallax starfield background on key sections  
+- Magnetic/interactive buttons and subtle motion  
+- Responsive layout with accessible colors/contrast  
+- Project rows with images, tech tags, GitHub links, and optional demos  
+- Contact section with copy-email and mailto composer  
+- Deployed via **GitHub Pages (Actions)**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🧰 Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **Framework:** React 18 + TypeScript  
+- **Bundler/Dev:** Vite  
+- **Styles:** Tailwind CSS (+ a few custom utilities)  
+- **Animation/FX:** CSS, small hooks, and `requestAnimationFrame`  
+- **Hosting:** GitHub Pages (custom domain on Cloudflare DNS)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js **18+** (20+ recommended)  
+- npm (or pnpm/yarn if you prefer)
+
+### Install & Run
+
+```bash
+# install
+npm ci
+
+# start dev server
+npm run dev
+# open the URL shown (usually http://localhost:5173)
+
+# build for production (outputs to /dist)
+npm run build
+
+# preview the production build locally
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Project Structure
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+
+.
+├── public/
+│   ├── GreciaResume.pdf
+│   ├── grecia.jpg
+│   ├── GamerTracker.jpg
+│   ├── Minesweeper.png
+│   ├── littleC.png
+│   ├── logo.png
+│   └── CNAME               # greciaocando.com (for GitHub Pages)
+│
+├── src/
+│   ├── components/
+│   │   ├── MagneticButton.tsx
+│   │   ├── ProjectRow.tsx
+│   │   ├── ScrollProgress.tsx
+│   │   └── StarBack.tsx
+│   ├── utils/Reveal.tsx
+│   ├── App.tsx
+│   ├── index.css
+│   └── main.tsx
+│
+├── index.html
+├── vite.config.ts
+├── tsconfig.json
+├── package.json
+└── .github/workflows/pages.yml   # GitHub Pages build & deploy
+'''
+
+
+
