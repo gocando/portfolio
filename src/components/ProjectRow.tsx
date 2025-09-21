@@ -1,5 +1,3 @@
-import { useEffect, useRef, useState } from 'react';
-
 type Link = { label: string; href: string };
 type ProjectResumeRowProps = {
   title: string;              // e.g. "The Gamer Journal"
