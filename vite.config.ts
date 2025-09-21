@@ -4,6 +4,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   // base can be omitted for root-domain deploys
-  base: '/portfolio/',
   plugins: [react()],
 })
