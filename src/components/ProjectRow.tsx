@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useRef, useState } from 'react';
 
 type Link = { label: string; href: string };
 type ProjectResumeRowProps = {
