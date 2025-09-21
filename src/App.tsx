@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import ScrollProgress from "./components/ScrollProgress";
 import { motion } from "framer-motion";
 import StarBack from "./components/StarBack";
@@ -44,48 +44,12 @@ function Nav({ active }: { active: string }) {
 }
 
 /* ---------- Small UI bits ---------- */
-const Pill: React.FC<React.PropsWithChildren> = ({ children }) => (
-  <span className="inline-flex items-center rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-sm md:text-base text-white/90">
-    {children}
-  </span>
-);
-
 /* Darker pill (for starry sections like About/Coursework to increase contrast) */
 const DarkPill: React.FC<React.PropsWithChildren> = ({ children }) => (
   <span className="inline-flex items-center rounded-xl border border-white/20 bg-black/60 px-4 py-2 text-sm md:text-base text-white">
     {children}
   </span>
 );
-
-function ProjectCard({
-  title,
-  desc,
-  links,
-}: {
-  title: string;
-  desc: string;
-  links: { label: string; href: string }[];
-}) {
-  return (
-    <div className="rounded-2xl border border-white/10 bg-black/40 p-6">
-      <h3 className="text-2xl font-semibold mb-2">{title}</h3>
-      <p className="text-white/80 mb-5">{desc}</p>
-      <div className="flex flex-wrap gap-3">
-        {links.map((l) => (
-          <a
-            key={l.href}
-            href={l.href}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center rounded-xl bg-white/5 border border-white/20 px-4 py-2 hover:bg-white/10 transition"
-          >
-            {l.label} →
-          </a>
-        ))}
-      </div>
-    </div>
-  );
-}
 
 function CopyEmailButton({ email = "contact@grecia.dev" }) {
   const [copied, setCopied] = useState(false);
