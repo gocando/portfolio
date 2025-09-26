@@ -94,7 +94,7 @@ function QuickMail({ to = "contact@grecia.dev" }) {
   return (
     <div className="rounded-3xl border border-white/10 bg-black/40 p-6">
       <h3 className="text-xl font-semibold mb-2">Quick mail</h3>
-      <p className="text-white/70 mb-4">Opens your mail app—no backend needed.</p>
+      <p className="text-white/70 mb-4">Opens your mail app.</p>
 
       <label className="block text-sm text-white/70 mb-1">Subject</label>
       <input
@@ -173,19 +173,14 @@ export default function Portfolio() {
               </span>
             </h2>
             <p className="text-lg text-white/85 leading-relaxed">
-              I’m a senior <strong>Computer Science student at the University of Florida</strong>. 
-              I love building with React/TypeScript on the front-end and
-              Node/Express on the back-end, and I’m always digging into lower-level topics like
-              OS and compilers. I’m also <strong>interested in cybersecurity</strong>—especially how
-             software, systems, and hardware intersect. When I’m not coding I’m reading, lifting, or iterating on design.
+              I’m a senior <strong>Computer Science student at the University of Florida 🐊 </strong> {'\u00A0'} with 
+              a growing passion for <strong>cybersecurity</strong>, <strong>databases</strong>, and modern web development.
+              I enjoy building thoughtful interfaces with <strong>React/TypeScript</strong> on the front-end and 
+              working with data and backend systems that bring projects to life.
+            <br /><br />
+              Beyond code, I love reading 📚, working out, and  cuddling my dog 🐶. I’m always looking to 
+              learn new technologies, explore fresh ideas ✨, and collaborate on creative projects that blend security, data, and design.
             </p>
-        <ul className="space-y-2">
-          <li>🌱 Currently expanding my web stack with HTML, CSS, and modern JS tooling.</li>
-          <li>
-            🤝 Looking to collaborate on projects that combine creativity and engineering—apps,
-            games, or productivity tools.
-          </li>
-        </ul>
           </div>
 
           {/* Right column card with photo */}
@@ -203,116 +198,126 @@ export default function Portfolio() {
       </Section>
 
       {/* SKILLS & TOOLS */}
-<Section id="skills" className="pb-8">
-  <h2 className="text-5xl font-bold mb-6">
-    <span className="underline underline-offset-8 decoration-4 decoration-sky-400/80">
-      Skills &amp; Tools
-    </span>
-  </h2>
+      <Section id="skills" className="pb-8">
+        <h2 className="text-5xl font-bold mb-6">
+          <span className="underline underline-offset-8 decoration-4 decoration-sky-400/80">
+            Skills &amp; Tools
+          </span>
+        </h2>
 
-  {/* little helper so lanes feel consistent */}
-  <style>
-    {`
-      .lane {
-        -webkit-overflow-scrolling: touch;
-        scroll-snap-type: x proximity;
-      }
-      .lane > * {
-        scroll-snap-align: start;
-      }
-      .lane::-webkit-scrollbar { height: 6px; }
-      .lane::-webkit-scrollbar-thumb { background: rgba(255,255,255,.15); border-radius: 9999px; }
-      .lane::-webkit-scrollbar-track { background: transparent; }
-    `}
-  </style>
+        {/* little helper so lanes feel consistent */}
+        <style>
+          {`
+            .lane {
+              -webkit-overflow-scrolling: touch;
+              scroll-snap-type: x proximity;
+            }
+            .lane > * {
+              scroll-snap-align: start;
+            }
+            .lane::-webkit-scrollbar { height: 6px; }
+            .lane::-webkit-scrollbar-thumb { background: rgba(255,255,255,.15); border-radius: 9999px; }
+            .lane::-webkit-scrollbar-track { background: transparent; }
+          `}
+        </style>
 
-  <div className="space-y-6">
-    {/* Languages */}
-    <div className="rounded-3xl border border-white/10 bg-black/30 p-5">
-      <div className="mb-3 flex items-center justify-between">
-        <h3 className="text-xl font-semibold">Languages</h3>
-      </div>
-      <div className="lane flex items-center gap-3 overflow-x-auto">
-        <DarkPill>JavaScript / TypeScript</DarkPill>
-        <DarkPill>Python</DarkPill>
-        <DarkPill>C++</DarkPill>
-        <DarkPill>SQL</DarkPill>
-        <DarkPill>HTML / CSS</DarkPill>
-      </div>
-    </div>
+        <div className="space-y-6">
+          {/* Languages */}
+          <div className="rounded-3xl border border-white/10 bg-black/30 p-5">
+            <div className="mb-3 flex items-center justify-between">
+              <h3 className="text-xl font-semibold">Languages</h3>
+            </div>
+            <div className="lane flex flex-wrap items-center gap-3 overflow-x-auto">
+              <DarkPill>JavaScript / TypeScript</DarkPill>
+              <DarkPill>Python</DarkPill>
+              <DarkPill>C++</DarkPill>
+              <DarkPill>SQL</DarkPill>
+              <DarkPill>HTML / CSS</DarkPill>
+              <DarkPill>MATLAB</DarkPill>
+            </div>
+          </div>
 
-    {/* Frontend */}
-    <div className="rounded-3xl border border-white/10 bg-black/30 p-5">
-      <div className="mb-3 flex items-center justify-between">
-        <h3 className="text-xl font-semibold">Frontend</h3>
-      </div>
-      <div className="lane flex items-center gap-3 overflow-x-auto">
-        <DarkPill>React</DarkPill>
-        <DarkPill>Next.js</DarkPill>
-        <DarkPill>TypeScript</DarkPill>
-        <DarkPill>Tailwind</DarkPill>
-        <DarkPill>CSS</DarkPill>
-        <DarkPill>Framer Motion</DarkPill>
-      </div>
-    </div>
+          {/* Frontend */}
+          <div className="rounded-3xl border border-white/10 bg-black/30 p-5">
+            <div className="mb-3 flex items-center justify-between">
+              <h3 className="text-xl font-semibold">Frontend</h3>
+            </div>
+            <div className="lane flex flex-wrap items-center gap-3 overflow-x-auto">
+              <DarkPill>React</DarkPill>
+              <DarkPill>Next.js</DarkPill>
+              <DarkPill>TypeScript</DarkPill>
+              <DarkPill>Tailwind</DarkPill>
+              <DarkPill>CSS</DarkPill>
+              <DarkPill>Framer Motion</DarkPill>
+            </div>
+          </div>
 
-    {/* Backend & Data */}
-    <div className="rounded-3xl border border-white/10 bg-black/30 p-5">
-      <div className="mb-3 flex items-center justify-between">
-        <h3 className="text-xl font-semibold">Backend &amp; Data</h3>
-      </div>
-      <div className="lane flex items-center gap-3 overflow-x-auto">
-        <DarkPill>Node</DarkPill>
-        <DarkPill>Express</DarkPill>
-        <DarkPill>REST APIs</DarkPill>
-        <DarkPill>Auth (JWT/OAuth)</DarkPill>
-        <DarkPill>MariaDB</DarkPill>
-        <DarkPill>MySQL</DarkPill>
-        <DarkPill>MongoDB</DarkPill>
-      </div>
-    </div>
+          {/* Backend & Data */}
+          <div className="rounded-3xl border border-white/10 bg-black/30 p-5">
+            <div className="mb-3 flex items-center justify-between">
+              <h3 className="text-xl font-semibold">Backend &amp; Data</h3>
+            </div>
+            <div className="lane flex flex-wrap items-center gap-3 overflow-x-auto">
+              <DarkPill>Node.js</DarkPill>
+              <DarkPill>Express.js</DarkPill>
+              <DarkPill>REST APIs</DarkPill>
+              <DarkPill>Auth (JWT/OAuth)</DarkPill>
+              <DarkPill>MariaDB</DarkPill>
+              <DarkPill>MySQL</DarkPill>
+              <DarkPill>MongoDB</DarkPill>
+            </div>
+          </div>
 
-    {/* Dev Tools & Platforms */}
-    <div className="rounded-3xl border border-white/10 bg-black/30 p-5">
-      <div className="mb-3 flex items-center justify-between">
-        <h3 className="text-xl font-semibold">Dev Tools &amp; Platforms</h3>
-      </div>
-      <div className="lane flex items-center gap-3 overflow-x-auto">
-        <DarkPill>macOS</DarkPill>
-        <DarkPill>Linux</DarkPill>
-        <DarkPill>VS Code</DarkPill>
-        <DarkPill>Visual Studio</DarkPill>
-        <DarkPill>PyCharm</DarkPill>
-        <DarkPill>IntelliJ</DarkPill>
-        <DarkPill>SolidWorks (basic)</DarkPill>
-        <DarkPill>Git/GitHub</DarkPill>
-        <DarkPill>MATLAB</DarkPill>
-        <DarkPill>Docker</DarkPill>
-      </div>
-    </div>
-  </div>
-</Section>
+          {/* Dev Tools & Platforms */}
+          <div className="rounded-3xl border border-white/10 bg-black/30 p-5">
+            <div className="mb-3 flex items-center justify-between">
+              <h3 className="text-xl font-semibold">Dev Tools &amp; Platforms</h3>
+            </div>
+            <div className="lane flex flex-wrap items-center gap-3 overflow-x-auto">
+              <DarkPill>VS Code</DarkPill>
+              <DarkPill>Visual Studio</DarkPill>
+              <DarkPill>PyCharm</DarkPill>
+              <DarkPill>IntelliJ</DarkPill>
+              <DarkPill>SolidWorks (basic)</DarkPill>
+              <DarkPill>Git/GitHub</DarkPill>
+              <DarkPill>Docker</DarkPill>
+            </div>
+          </div>
 
-{/* COURSEWORK (separate section) */}
-<Section id="coursework" className="pt-4">
-  <h2 className="text-5xl font-bold mb-6">
-    <span className="underline underline-offset-8 decoration-4 decoration-sky-400/80">
-      Coursework
-    </span>
-  </h2>
+          {/* Languages Spoken */}
+          <div className="rounded-3xl border border-white/10 bg-black/30 p-5">
+            <div className="mb-3 flex items-center justify-between">
+              <h3 className="text-xl font-semibold">Languages Spoken</h3>
+            </div>
+            <div className="lane flex items-center gap-3 overflow-x-auto">
+              <DarkPill>Spanish (native)</DarkPill>
+              <DarkPill>English (fluent)</DarkPill>
+              <DarkPill>French (intermediate)</DarkPill>
+            </div>
+          </div>
+        </div>
+      </Section>
 
-  <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-    <div className="rounded-2xl border border-white/10 bg-black/30 p-4"><DarkPill>Data Structures &amp; Algorithms (COP3530)</DarkPill></div>
-    <div className="rounded-2xl border border-white/10 bg-black/30 p-4"><DarkPill>Computer Organization (CDA3101)</DarkPill></div>
-    <div className="rounded-2xl border border-white/10 bg-black/30 p-4"><DarkPill>Operating Systems</DarkPill></div>
-    <div className="rounded-2xl border border-white/10 bg-black/30 p-4"><DarkPill>Programming Language Concepts</DarkPill></div>
-    <div className="rounded-2xl border border-white/10 bg-black/30 p-4"><DarkPill>Information and Database &amp; Systems</DarkPill></div>
-    <div className="rounded-2xl border border-white/10 bg-black/30 p-4"><DarkPill>Discrete Structures</DarkPill></div>
-    <div className="rounded-2xl border border-white/10 bg-black/30 p-4"><DarkPill>Software Engineering</DarkPill></div>
-    <div className="rounded-2xl border border-white/10 bg-black/30 p-4"><DarkPill>Cyber-Physical System Security</DarkPill></div>
-    <div className="rounded-2xl border border-white/10 bg-black/30 p-4"><DarkPill>Intro to Web Dev / Front-End Projects</DarkPill></div>
-  </div>
-</Section>
+      {/* COURSEWORK (separate section) */}
+      <Section id="coursework" className="pt-4">
+        <h2 className="text-5xl font-bold mb-6">
+          <span className="underline underline-offset-8 decoration-4 decoration-sky-400/80">
+            Coursework
+          </span>
+        </h2>
+
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="rounded-2xl border border-white/10 bg-black/30 p-4"><DarkPill>Data Structures &amp; Algorithms (COP3530)</DarkPill></div>
+          <div className="rounded-2xl border border-white/10 bg-black/30 p-4"><DarkPill>Computer Organization (CDA3101)</DarkPill></div>
+          <div className="rounded-2xl border border-white/10 bg-black/30 p-4"><DarkPill>Operating Systems</DarkPill></div>
+          <div className="rounded-2xl border border-white/10 bg-black/30 p-4"><DarkPill>Programming Language Concepts</DarkPill></div>
+          <div className="rounded-2xl border border-white/10 bg-black/30 p-4"><DarkPill>Information and Database &amp; Systems</DarkPill></div>
+          <div className="rounded-2xl border border-white/10 bg-black/30 p-4"><DarkPill>Discrete Structures</DarkPill></div>
+          <div className="rounded-2xl border border-white/10 bg-black/30 p-4"><DarkPill>Software Engineering</DarkPill></div>
+          <div className="rounded-2xl border border-white/10 bg-black/30 p-4"><DarkPill>Cyber-Physical System Security</DarkPill></div>
+          <div className="rounded-2xl border border-white/10 bg-black/30 p-4"><DarkPill>Intro to Web Dev / Front-End Projects</DarkPill></div>
+        </div>
+      </Section>
 
 
       {/* PROJECTS */}
@@ -332,7 +337,7 @@ export default function Portfolio() {
             "Express.js + MongoDB backend with sentiment analysis & routed API calls.",
             "JWT for secure authentication & authorization."
           ]}
-          stack={["MongoDB","Express","Angular/React","Node","JWT"]}
+          stack={["MongoDB","Express","Angular","Node","JWT"]}
           links={[
             { label: "GitHub", href: "https://github.com/itsomort/gamer-tracker" },
           ]}
@@ -409,7 +414,7 @@ export default function Portfolio() {
               </a>
               <a
                 className="rounded-xl border border-sky-400/40 bg-sky-600/25 px-5 py-3 hover:bg-sky-600/35 transition"
-                href="/GreciaResume.pdf"
+                href="/Grecia_Ocando_Resume.pdf"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -427,7 +432,7 @@ export default function Portfolio() {
         </div>
         <footer className="py-10">
           <div className="container mx-auto px-6 max-w-6xl text-center text-sm text-white/60">
-             © 2025 Grecia • Built with React, Tailwind, Framer Motion & R3F
+             © 2025 Grecia Ocando.
            </div>
         </footer>
 
