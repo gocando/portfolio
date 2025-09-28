@@ -184,15 +184,21 @@ export default function Portfolio() {
           </div>
 
           {/* Right column card with photo */}
-        <div className="relative rounded-3xl border border-white/10 bg-gradient-to-br from-sky-900/20 via-fuchsia-900/10 to-indigo-900/20 aspect-[4/3] overflow-hidden">
-          <motion.img
-            src="/grecia.jpg"
-            alt="Grecia Ocando"
-            loading="lazy"
-            className="absolute inset-0 h-full w-full object-cover"
-            whileHover={{ scale: 1.03 }}
-            transition={{ type: "spring", stiffness: 200, damping: 15 }}
-          />
+        <div className="relative aspect-[3/4] rounded-3xl overflow-hidden">
+            <motion.img
+              src="/professional.jpg"
+              alt="Grecia Ocando"
+              loading="lazy"
+              className="
+                absolute left-1/2 top-1/2
+                h-[82%] w-auto                      /* ↓ smaller than before (try 80–84%) */
+                -translate-x-1/2 -translate-y-1/2
+                object-contain
+                rounded-[22px]                      /* rounded corners on the image */
+                "
+              whileHover={{ scale: 1.02 }}
+              transition={{ type: 'spring', stiffness: 200, damping: 18 }}
+            />
           </div>
         </div>
       </Section>
